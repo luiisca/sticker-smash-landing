@@ -6,13 +6,53 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --primary-glow: conic-gradient(
+    from 180deg at 75% 50%,
+    #ffd33d 0deg,
+    #ffd33d 55deg,
+    #ffd33d 120deg,
+    #ffd33d 160deg,
+    transparent 360deg
+  );
+  --secondary-glow: radial-gradient(
+    white,
+    transparent
+  );
+
+  --brand: 50, 95%, 58%;
+  --brand-secondary: 50, 45%, 40%;
+  --brand-secondary-emphasis: 50, 45%, 50%;
+  --brand-emphasis: 50, 100%, 62%;
+  --muted: 210, 20%, 98.04%;
+  --subtle: 220, 14.29%, 95.88%;
+  --emphasis: 220, 13.04%, 90.98%; 
+  --text: 0, 0%, 6%;
+  --text-emphasis: 0, 0%, 11%;
+  --text-subtle: 0, 0%, 6%;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+
+    --primary-glow: radial-gradient(#ffd33d, transparent);
+    --secondary-glow: linear-gradient(
+      to bottom right,
+      transparent,
+      transparent,
+      #ffd33d
+    );
+
+      --muted: 234, 16.67%, 13.76%;
+      --subtle: 234.55, 12.36%, 17.45%;
+      --emphasis: 237.27, 20%, 21.57%;
+      --text: 0, 0%, 95%;
+      --text-emphasis: 0, 0%, 98%;
+      --text-subtle: 0, 0%, 75%;
   }
 }
 
